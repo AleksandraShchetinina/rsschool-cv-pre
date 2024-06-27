@@ -9,15 +9,15 @@ Saratov National Research State University named after N.G. Chernyshevsky, Depar
 **Diskord:** aleksandrashchetinina  
 **Github:** [AleksandraShchetinina](https://github.com/aleksandrashchetinina)  
 **Telegram:** @Aleksandra_Shchetinina
-*******
+******
 #### **ABOUT ME**
 My name is Alexandra! I am 29 years old. I love to travel, fish, and hang out with friends. She worked as a teacher for a long time. Recently I have been working in 1C technical support. I like to study and learn something new. Why not try to start programming in a "normal" language? That's why I didn't sign up for this course. Let's see what happens?
-*******
+******
 #### **SKILLS:**
 * HTML
 * CSS
 * GIT
-*******
+******
 #### **CODE:**
 **Kata "Type of sum"** (frome codewars)  
 *DESCRIPTION:*   
@@ -27,7 +27,7 @@ const c = a + b;
   return typeof c;
 }
 ```
-*******
+******
 #### **LANGUAGES:**
 * Russian - native speaker  
 * English - A2
