@@ -1,10 +1,13 @@
 # Aleksandra Shchetinina
-### Front-End developer
+### Junior Front-End developer
+******
+#### **EDUCATION:**
+Saratov National Research State University named after N.G. Chernyshevsky, Department of Biology, 2016
 ******
 #### **CONTACTS:**
 **Email:** aleksandrasetinina8@gmail.com   
 **Diskord:** aleksandrashchetinina  
-**Github:** AleksandraShchetinina  
+**Github:** [AleksandraShchetinina](https://github.com/aleksandrashchetinina)  
 **Telegram:** @Aleksandra_Shchetinina
 *******
 #### **ABOUT ME**
@@ -24,4 +27,7 @@ const c = a + b;
   return typeof c;
 }
 ```
-
+*******
+#### **LANGUAGES:**
+* Russian - native speaker  
+* English - A2
