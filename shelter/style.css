@@ -206,10 +206,9 @@
     justify-content: space-between;
     height: 100%;
     align-items: center;
-    background-color: beige;   
+    background-color: #FAFAFA   
 }
  .pets-card.center{
-background-color: greenyellow;
 margin: 0 36px;
 }
 
@@ -270,17 +269,63 @@ margin: 0 36px;
     width: 261px;
     height: 52px;
     border-radius: 100px;
-    background-color:#F1CDB3 ;
+    border: none;
+    background-color:#F1CDB3;
     padding: 15px 45px;
     font-size: 17px;
     font-family: GeorgiaRegular;
     line-height: 22.1px;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.08em;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 104px;
+    margin-bottom: 105px;
+    color: #292929;
 }
 .help{
     width: 100%;
     height: 611px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.help-heading{
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-top: 81px;
+    color: #545454;
+}
+.help-list{
+    width: 100%;
+    height: 281px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 59px;
+
+}
+.help-item{
+ height: 113px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ margin-left: 60px;
+ margin-right: 60px;
+}
+
+.help-item-title{
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color:  #545454;
 }
