@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/sleeping-area.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -18,11 +19,11 @@
                 </div>
                 <nav class="nav-menu">
                     <ul class="nav-list">
-                        <li class="nav-item-active">
+                        <li class="nav-item active ">
                             <a href="#About" class="nav-link">About the shelter</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#Our_pets" class="nav-link">Our pets</a>
+                            <a href="../pets-1280/index.html" class="nav-link">Our pets</a>
                         </li>
                         <li class="nav-item">
                             <a href="#Help" class="nav-link">Help the shelter</a>
@@ -38,12 +39,13 @@
                     <h2 class="heading">Not only people need a house</h2>
                     <p class="subheading">We offer to give a chance to a little and nice puppy with an extremely wide
                         and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-                    <button class="button-primary">Make a friend</button>
+                    <button class="button-primary"><a href="#Our_pets" class="nav-link-button">Make a
+                            friend</a></button>
                 </section>
                 <img class="start-screen-puppy" src="img/start-screen-puppy.png" alt="dog">
             </div>
         </section>
-        <section class="about" id="About">
+        <div class="about" id="About">
             <div class="about-content">
                 <img src="img/about-pets.png" alt="pets">
                 <section class="about-content-text">
@@ -58,7 +60,7 @@
                         them alone.</p>
                 </section>
             </div>
-        </section>
+        </div>
         <section class="pets" id="Our_pets">
             <div class="pets-content">
                 <h3 class="pets-heading">Our friends who<br>
@@ -92,7 +94,8 @@
                         <img src="img/Arrow-two.png" alt="arrow">
                     </div>
                 </section>
-                <button class="card-button-primary">Get to know the rest</button>
+                <button class="card-button-primary"><a href="../pets-1280/index.html" class="nav-link-button">Get to
+                        know the rest</a></button>
             </div>
         </section>
         <section class="help" id="Help">
@@ -158,23 +161,37 @@
                 <div class="footer-contacts">
                     <h3 class="footer-contact-title">For questions <br> and suggestions</h3>
                     <div class="mail">
-                        <img src="img/mail.png" alt="mail">
-                        <h4 class="footer-text">email@shelter.com</h4>
+                        <a href="mailto:email@shelter.com"><img src="img/mail.png" alt="mail"> </a>
+                        <h4>
+                            <a href="mailto:email@shelter.com" class="footer-text">email@shelter.com </a>
+                        </h4>
+
                     </div>
                     <div class="footer-phone">
-                        <img src="img/phone.png" alt="phone">
-                        <h4 class="footer-pfone-number">+13 674 567 75 54</h4>
+                        <a href="tel:+13 674 567 75 54">
+                            <img src="img/phone.png" alt="phone">
+                        </a>
+                        <h4><a href="tel:+13 674 567 75 54" class="footer-pfone-number">+13 674 567 75 54 </a></h4>
                     </div>
                 </div>
                 <div class="location">
                     <h3 class="footer-contact-title">We are waiting for your visit</h3>
                     <div class="location-boston">
-                        <img src="img/pin.png" alt="pin">
-                        <h4 class="footer-text-boston">1 Central Street, Boston (entrance from the store)</h4>
+                        <a href="https://www.google.com/maps/@42.3584369,-71.0569448,16z?entry=ttu">
+                            <img src="img/pin.png" alt="pin">
+                        </a>
+                        <a href="https://www.google.com/maps/@42.3584369,-71.0569448,16z?entry=ttu" class="link-location" >
+                            <h4 class="footer-text-boston">1 Central Street, Boston (entrance from the store)</h4>
+                        </a>
                     </div>
                     <div class="location-london">
-                        <img src="img/pin.png" alt="pin">
-                        <h4 class="footer-text">18 South Park, London</h4>
+                        <a href="https://www.google.com/maps/@51.462099,-0.3134949,12z?entry=ttu">
+                            <img src="img/pin.png" alt="pin">
+                        </a>
+
+                        <a href="https://www.google.com/maps/@51.462099,-0.3134949,12z?entry=ttu" class="link-location">
+                            <h4 class="footer-text">18 South Park, London</h4>
+                        </a>
                     </div>
                 </div>
                 <img class="fotter-puppe" src="img/footer-puppy.png" alt="puppy">

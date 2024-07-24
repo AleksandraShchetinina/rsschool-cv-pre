@@ -5,6 +5,7 @@
 }
 html {
     scroll-behavior: smooth;
+    
   }
 
 .container {
@@ -57,8 +58,7 @@ html {
 }
 .nav-link{
     text-decoration: none;
-    color: #FAFAFA;
-    
+    color: #CDCDCD; 
 }
 
 .nav-menu {
@@ -70,17 +70,22 @@ html {
     justify-content: space-between;
     width: 443px;
     height: 27px;
-
     list-style: none;
-
 }
 
 .nav-item {
-    color: #FAFAFA;
-
+    color: #CDCDCD;
+    transition: .3s all ease-in-out;
 }
 
-.nav-item-active {
+.nav-item :hover {
+    cursor: pointer;
+    color: #FAFAFA;
+    transition: .3s all ease-in-out;
+   
+}
+
+.active {
     border-bottom: 3px solid #F1CDB3;
     color: #FAFAFA;
 }
@@ -225,6 +230,7 @@ html {
     padding: 0px 0px;
 }
 
+
 .pets-card {
     display: flex;
     flex-direction: column;
@@ -236,6 +242,14 @@ html {
 
 .pets-card.center {
     margin: 0 36px;
+}
+
+.pets-card:hover{
+    cursor: pointer;
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    transition: all .3s ease-in;
 }
 
 .button-arrow-left {
@@ -250,6 +264,11 @@ html {
     margin-top: 7px;
 }
 
+.button-arrow-left:hover {
+    cursor: pointer;
+    background-color: #F1CDB3;
+}
+
 .button-arrow-right {
     width: 52px;
     height: 52px;
@@ -260,6 +279,17 @@ html {
     align-items: center;
     margin-right: 10px;
     margin-top: 7px;
+}
+
+.button-arrow-right:hover {
+    cursor: pointer;
+    background-color: #F1CDB3;
+}
+
+.nav-link-button{
+    text-decoration: none;
+    color: #292929; 
+
 }
 
 .pets-img {
@@ -294,6 +324,12 @@ html {
     margin-bottom: 23px;
 }
 
+.card-button:hover  {
+    cursor: pointer;
+    background-color: #F1CDB3;
+    border-color: #000;
+}
+
 .card-button-primary {
     width: 261px;
     height: 52px;
@@ -309,6 +345,12 @@ html {
     text-align: center;
     margin-bottom: 105px;
     color: #292929;
+}
+
+.card-button-primary:hover {
+    cursor: pointer;
+    background-color: rgb(221, 169, 150);
+
 }
 
 .help {
@@ -487,7 +529,13 @@ html {
     line-height: 23px;
     letter-spacing: 0.06em;
     text-align: left;
+    text-decoration: none;
     color: #F1CDB3;
+    
+}
+
+.link-location{
+    text-decoration: none;
 }
 
 .footer-phone {
@@ -495,6 +543,7 @@ html {
     height: 32px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .phone {
@@ -517,7 +566,7 @@ html {
     letter-spacing: 0.06em;
     text-align: left;
     color: #F1CDB3;
-    margin-top: 3px;
+    text-decoration: none;
 
 }
 
@@ -546,15 +595,19 @@ html {
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.06em;
+    text-decoration: none;
     color: #F1CDB3;
-    padding-left: 18px;
+    width: 260px;
+    text-decoration: none;
 
 }
+
 
 .location-london {
     width: 268px;
     height: 32px;
     display: flex;
+    text-decoration: none;
     justify-content: space-between;
     align-items: center;
 
