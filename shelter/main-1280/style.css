@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
-    
-  }
+
+}
 
 .container {
     width: 1280px;
@@ -18,7 +19,7 @@ html {
     display: flex;
     flex-direction: column;
     background: url(img/start-screen-background.jpg);
-    background-image: url(img/start-screen-gradient-background.jpg);  
+    background-image: url(img/start-screen-gradient-background.jpg);
 }
 
 .header {
@@ -55,10 +56,24 @@ html {
     font-weight: 400;
     letter-spacing: 0.1em;
     color: #FFFFFF;
+
 }
-.nav-link{
+
+.link-logo-title {
     text-decoration: none;
-    color: #CDCDCD; 
+    color: #F1CDB3;
+}
+
+.link-logo-subtitle {
+    text-decoration: none;
+    color: #FFFFFF;
+    ;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #CDCDCD;
 }
 
 .nav-menu {
@@ -82,7 +97,7 @@ html {
     cursor: pointer;
     color: #FAFAFA;
     transition: .3s all ease-in-out;
-   
+
 }
 
 .active {
@@ -240,11 +255,16 @@ html {
     background-color: #FAFAFA
 }
 
+.link-number-card {
+    text-decoration: none;
+    color: #545454;
+}
+
 .pets-card.center {
     margin: 0 36px;
 }
 
-.pets-card:hover{
+.pets-card:hover {
     cursor: pointer;
     cursor: pointer;
     background: #FFFFFF;
@@ -286,9 +306,9 @@ html {
     background-color: #F1CDB3;
 }
 
-.nav-link-button{
+.nav-link-button {
     text-decoration: none;
-    color: #292929; 
+    color: #292929;
 
 }
 
@@ -324,10 +344,10 @@ html {
     margin-bottom: 23px;
 }
 
-.card-button:hover  {
+.pets-card:hover .card-button {
     cursor: pointer;
-    background-color: #F1CDB3;
-    border-color: #000;
+    background: #F1CDB3;
+    transition: all .3s ease-in;
 }
 
 .card-button-primary {
@@ -531,10 +551,10 @@ html {
     text-align: left;
     text-decoration: none;
     color: #F1CDB3;
-    
+
 }
 
-.link-location{
+.link-location {
     text-decoration: none;
 }
 
@@ -558,7 +578,7 @@ html {
     padding-top: 6px;
 }
 
-.footer-pfone-number {
+.footer-phone-number {
     font-family: Georgia;
     font-size: 20px;
     font-weight: 400;
@@ -567,7 +587,6 @@ html {
     text-align: left;
     color: #F1CDB3;
     text-decoration: none;
-
 }
 
 .location {
