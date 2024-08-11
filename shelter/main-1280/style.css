@@ -463,16 +463,15 @@ html {
 
 @media (max-width: 400px) {
     .about {
-        width: 320px;
+        width: 100%;
         height: 974px;
-
+        padding-top: 85px;
     }
 
     .about-content {
         width: 300px;
-        height: 890px;
-        margin-top: 29px;
-
+        height: auto;
+       padding: 0;
     }
 
     .about-content-text {
