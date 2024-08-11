@@ -177,14 +177,21 @@ html {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+
+    .content {
+            max-width: 460px;
+            height: 322px;
+            margin-top: 0;
+        }
+        
 
     .start-screen-puppy {
-        width: 569px;
-        height: 593px;
+        width: 369px;
+        height: 393px;
         margin-right: 0;
-        margin-top: 100px;
-        margin-left: 133px;
+        margin-top: 0;
+        margin-left: 0;
     }
 }
 
@@ -367,6 +374,12 @@ html {
         height: 1048px;
         padding-top: 61px;
         justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .about {
+        padding-top: 0px;
     }
 }
 
@@ -1059,14 +1072,9 @@ html {
 
     }
 
-    .donation-content-heading {
-        font-size: 25px;
-        line-height: 32.5px;
-    }
 
     .donation-subheading {
-        width: 273px;
-        height: 24px;
+        height: 17px;
         font-weight: 400;
         font-size: 15px;
         line-height: 24px;
@@ -1320,8 +1328,8 @@ html {
     .footer-content {
         display: flex;
         flex-wrap: wrap;
-        padding-left: 34px;
-        padding-right: 34px;
+        padding-left: 38px;
+        padding-right: 39px;
        
         height: auto;
         margin-top: 30px;
