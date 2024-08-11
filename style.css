@@ -1,0 +1,150 @@
+.html {
+    scroll-behavior: smooth;
+}
+
+.content {
+    margin: auto;
+    width: 50%;
+    min-height: 100vh;
+}
+
+.nav {
+    background-color: darkseagreen;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+
+.avatar {
+    position: relative;
+    border-radius: 50%;
+    border: 5px solid darkseagreen;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.name {
+    width: 75%;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.contacts {
+    width: 40%;
+    text-align: center;
+}
+
+.contacts-list {
+    text-align: center;
+
+}
+
+.contacts-list-elements {
+    list-style: none;
+    text-align: left;
+    font-size: 16px;
+}
+
+.Summary {
+    width: 70%;
+    text-align: center;
+}
+
+.text {
+    font-size: 20px;
+    text-align: left;
+}
+
+.skills {
+    width: 40%;
+    text-align: center;
+}
+
+.skills-list {
+    text-align: center;
+}
+
+.skills-list-elements {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Kata {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.code {
+    width: 70%;
+    text-align: center;
+}
+
+.myCode {
+    font-size: 20px;
+}
+
+.languagese {
+    width: 50%;
+    text-align: center;
+
+}
+
+.language-list {
+    text-align: center;
+}
+
+.language-list-elements {
+    text-align: left;
+    font-size: 20px;
+}
+
+.education {
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+    background-color: darkseagreen;
+    text-align: center;
+    font-weight: bold;
+}
+
+.logo {
+    margin-right: 40px;
+    align-content: center;
+}
+
+.git {
+    margin-left: 40px;
+    align-content: center;
+}
+
+.year {
+    font-weight: bold;
+    font-size: 20px;
+}
