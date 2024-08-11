@@ -880,6 +880,12 @@ html {
         margin-left: 0px;
         margin-right: 0px;
     }
+
+    .help-list {
+       
+        gap: 52px;
+       
+    }
 }
 
 @media (max-width: 768px) {
@@ -890,6 +896,7 @@ html {
     }
 
     .help-list {
+        gap:0;
         width: 630px;
         display: grid;
         align-self: center;
