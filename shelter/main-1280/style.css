@@ -11,12 +11,12 @@ html {
 
 .container {
     max-width: 1280px;
-    height: 3796px;
     margin: 0 auto;
 }
 
 
 .start-screen {
+    width: 100%;
     display: flex;
     flex-direction: column;
     background: url(img/start-screen-background.jpg);
@@ -25,11 +25,14 @@ html {
 
 @media (max-width: 1279px) {
     .start-screen {
+        width: 100%;
         height: auto;
         background-size: 100% 100%;
     }
+
     @media (max-width: 400px) {
         .start-screen {
+            width: 100%;
             height: 823px;
             background-size: 100% 100%;
         }
@@ -47,16 +50,17 @@ html {
 
 @media (max-width: 1279px) {
     .header {
-        width: 708px;
+        width: calc(100% - 60px);
         margin: 30px;
-        margin-bottom: 0;   
+        margin-bottom: 0;
     }
 }
+
 @media (max-width: 400px) {
     .header {
         width: calc(100% - 20px);
         margin-left: 20px;
-        margin-top: 30px;  
+        margin-top: 30px;
     }
 }
 
@@ -132,9 +136,10 @@ html {
     border-bottom: 3px solid #F1CDB3;
     color: #FAFAFA;
 }
-.burger-menu{
+
+.burger-menu {
     display: none;
-    
+
 }
 
 .burger-line {
@@ -143,10 +148,11 @@ html {
     background: #F1CDB3;
 
 }
+
 .start-screen-puppy {
     width: 698px;
     height: 728px;
-   
+
 }
 
 @media (max-width: 1279px) {
@@ -161,6 +167,7 @@ html {
 }
 
 @media (max-width: 768px) {
+
     .start-screen-puppy {
         width: 569px;
         height: 593px;
@@ -169,6 +176,18 @@ html {
         margin-left: 133px;
     }
 }
+
+@media (max-width: 768px) {
+
+    .start-screen-puppy {
+        width: 569px;
+        height: 593px;
+        margin-right: 0;
+        margin-top: 100px;
+        margin-left: 133px;
+    }
+}
+
 
 .start-screen-content {
     display: flex;
@@ -197,6 +216,7 @@ html {
         margin-top: 0px;
     }
 }
+
 @media (max-width: 400px) {
     .start-screen-content {
         width: 320px;
@@ -225,6 +245,7 @@ html {
 
     }
 }
+
 @media (max-width: 400px) {
     .content {
         max-width: 300px;
@@ -243,7 +264,7 @@ html {
     line-height: 57.2px;
     color: #FFFFFF;
     font-weight: 400;
-  
+
 }
 
 .subheading {
@@ -281,14 +302,15 @@ html {
         height: 0;
         display: none;
     }
-    .burger-menu{
+
+    .burger-menu {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         width: 30px;
         height: 22px;
         margin-right: 22px;
-        margin-top: 18px ;
+        margin-top: 18px;
     }
 }
 
@@ -297,8 +319,9 @@ html {
         width: 300px;
         height: 673px;
         text-align: center;
-    
+
     }
+
     .heading {
         width: 260px;
         height: 64px;
@@ -308,7 +331,7 @@ html {
         text-align: center;
         margin-bottom: 1px;
     }
-    
+
     .subheading {
         width: 300px;
         height: 94px;
@@ -423,27 +446,29 @@ html {
 @media (max-width: 400px) {
     .about {
         width: 320px;
-        height: 1000px;
-       
+        height: 974px;
+
     }
 
     .about-content {
         width: 300px;
         height: 890px;
-     
+        margin-top: 29px;
+
     }
 
     .about-content-text {
         display: flex;
-        flex-direction: column ;
+        flex-direction: column;
         width: 270px;
         height: 494px;
         align-items: center;
         text-align: justify;
         margin-bottom: 44px;
         margin-right: 5px;
-        
+
     }
+
     .about-heading {
         width: 250px;
         height: 64px;
@@ -452,21 +477,21 @@ html {
         letter-spacing: 0.06em;
         text-align: center;
         margin: 0;
-        
+
     }
-    
+
     .about-subheading {
         width: 270px;
         font-size: 15px;
         font-style: normal;
         line-height: 24px;
-        
+
     }
-    
+
     .about-pets {
         height: 353px;
         width: 260px;
-   
+
     }
 }
 
@@ -551,6 +576,7 @@ html {
     height: 100%;
     width: 82%;
     justify-content: space-around;
+    overflow: hidden;
 }
 
 .pets-card:hover {
@@ -562,6 +588,7 @@ html {
 }
 
 .button-arrow-left {
+   grid-area: button-arrow-left;
     width: 52px;
     height: 52px;
     border-radius: 100px;
@@ -579,6 +606,7 @@ html {
 }
 
 .button-arrow-right {
+    grid-area: button-arrow-right;
     width: 52px;
     height: 52px;
     border-radius: 100px;
@@ -714,48 +742,74 @@ html {
         .pets {
             width: 320px;
             height: 791px;
-            background-color: aqua;
         }
 
-       .pets-content {
-        width: 300px;
-        height: 707px;
-        align-items: center;
+        .pets-content {
+            width: 300px;
+            height: 707px;
+            align-items: center;
 
-    }
+        }
 
         .pets-heading {
-        width: 300px;
-        height: 64px;
-        font-size: 25px;
-        line-height: 32.5px;
-        text-align: center;
-        padding-top: 6px;
-        margin-bottom: 47px;
-        margin-left: 15px;
-    }
+            width: 300px;
+            height: 64px;
+            font-size: 25px;
+            line-height: 32.5px;
+            text-align: center;
+            padding-top: 6px;
+            margin-bottom: 48px;
+            margin-top: 26px;
+            margin-left: 15px;
+        }
 
-    .slider {
-        width: 270px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        background-color: #F1CDB3;
-        grid-template-areas: "pets-card pets-card" "button-arrow-left button-arrow-right " "button-arrow-right button-arrow-left button-arrow-right";
-        height: auto;
-        justify-items: center;
-        row-gap: 20px;
+        .slider {
+            width: 270px;
+            height: 435px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: 
+            "pets-card pets-card" 
+            "button-arrow-left button-arrow-right";
+            height: auto;
+            justify-items: center;
+            row-gap: 10px;
+            margin-bottom: 42px;
 
-    }
+        }
 
-    
-    .visible-slider {
-        justify-content: space-between;
-        overflow: hidden;
-        width: 270px;
-        height: 435px;
-        display: flex;
-    }
+        .pets-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            align-items: center;
+            background-color: #FAFAFA
+            
+          
+        }
+
+        .visible-slider {
+            grid-area: pets-card;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            width: 270px;
+            height: 435px;
+            display: flex;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        .button-arrow-left {
+            margin-left: 17px;
+
+        }
+        .card-button-primary {
+            margin-left: 15px;
+        }
+  
     }
 
 }
@@ -837,11 +891,12 @@ html {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
 
     .help {
         height: 745px;
         width: 100%;
+        
     }
 
     .help-heading {
@@ -849,7 +904,7 @@ html {
         height: 64px;
         font-size: 25px;
         line-height: 32.5px;
-        margin-top: 15px;
+        margin-top: 44px;
 
     }
 
@@ -880,10 +935,6 @@ html {
         line-height: 16.5px;
 
     }
-
-
-
-
 }
 
 .donation {
@@ -939,6 +990,7 @@ html {
     justify-content: space-around;
     margin-top: 21px;
     padding-left: 7px;
+    border-radius: 6px;
 }
 
 .number-card {
@@ -989,6 +1041,103 @@ html {
 
     }
 
+    .donation-content-heading {
+        font-size: 25px;
+        line-height: 32.5px;
+    }
+
+    .donation-subheading {
+        width: 273px;
+        height: 24px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin-top: 19px;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    .donation {
+        width: 320px;
+        height: 542px;
+    }
+
+    .donation-content {
+        width: 100%;
+        height: 542px;
+        display: flex;
+        justify-content: center;
+        padding-top: 42px;
+
+    }
+
+    .donation-content-text {
+        width: 300px;
+        height: 281px;
+        margin-top: 0;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 34px;
+        justify-content: center;
+
+    }
+
+    .donation-content-heading {
+        font-size: 25px;
+        line-height: 32.5px;
+       
+       
+    }
+    
+
+    .donation-subheading {
+        font-family: Georgia;
+        width: 310px;
+        height: 24px;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+    
+    }
+
+    .credit-card {
+        width: 281px;
+        height: 43px;
+       
+    }
+
+    .number-card {
+        font-family: Georgia;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 16.5px;
+        letter-spacing: 0.06em;
+        padding-right: 5px;
+    }
+
+    .donation-legal-information {
+        width: 280px;
+        font-family: Arial;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: justify;
+        font-style: italic;
+        color: #B2B2B2;
+     
+    }
+
+    .donation-dog {
+        width: 260px;
+        height: 135px;
+        margin-bottom: 32px;
+        margin-left: 2px;
+    }
+
 }
 
 .footer {
@@ -1008,6 +1157,8 @@ html {
     height: 350px;
     margin: 0 auto;
 }
+
+
 
 .footer-contacts {
     width: 280px;
@@ -1129,6 +1280,7 @@ html {
     width: 300px;
     height: 310px;
     margin-top: auto;
+
 }
 
 @media (max-width: 768px) {
@@ -1169,4 +1321,58 @@ html {
         margin-top: 65px;
 
     }
+}
+
+@media (max-width: 400px) {
+    .footer {
+        width: 320px;
+        height: 809px;
+        justify-content: space-between;
+        margin-bottom: 0;
+        align-items: flex-start;
+        text-align: center;
+
+    }
+
+    .footer-content {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 300px;
+        height: 470px;
+        margin-top: 19px;
+
+    }
+
+    .footer-contacts {
+        width: 278px;
+        height: 208px; 
+        align-items: center;
+        margin-top: 0px;
+        margin-right: 0px;
+       
+    }
+
+    .footer h3 {
+        font-size: 25px;
+        text-align: center;
+        width: 278px;
+    }
+    
+  
+
+.location {
+    width: 300px;
+    height: 234px;
+    margin-top: 40px;
+ 
+}
+
+.fotter-puppe {
+    width: 260px;
+    height: 269px;
+    margin-top: 39px;
+
+
+}
 }
