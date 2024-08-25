@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="container">
+        <div class="mask"></div>
         <section class="header-container">
             <header class="header">
                 <div class="logo">
@@ -137,6 +138,15 @@
         </footer>
 
     </div>
+
+    <script>
+        document.querySelector('.burger-menu').addEventListener('click', function() {
+            this.classList.toggle('burger-active');
+            document.querySelector('.nav-menu').classList.toggle('open');
+            document.querySelector('.mask').classList.toggle('mask-active');
+        })
+        
+    </script>
     
 </body>
 </html>

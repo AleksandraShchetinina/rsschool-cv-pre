@@ -21,7 +21,19 @@ html {
     flex-direction: column;
     background: url(img/start-screen-background.jpg);
     background-image: url(img/start-screen-gradient-background.jpg);
+
 }
+
+.start-screen-active:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
 
 @media (max-width: 1279px) {
     .start-screen {
@@ -30,21 +42,22 @@ html {
         background-size: 100% 100%;
     }
 
-}  
+}
+
 @media (max-width: 767px) {
     .start-screen {
         align-items: center;
     }
 
-}  
+}
 
-    @media (max-width: 400px) {
-        .start-screen {
-            width: 100%;
-            height: 823px;
-            background-size: 100% 100%;
-        }
+@media (max-width: 400px) {
+    .start-screen {
+        width: 100%;
+        height: 823px;
+        background-size: 100% 100%;
     }
+}
 
 
 .header {
@@ -67,9 +80,13 @@ html {
 @media (max-width: 400px) {
     .header {
         width: calc(100% - 20px);
-        margin-left: 20px;
+        margin-left: 51px;
         margin-top: 30px;
     }
+}
+
+.open {
+    display: flex !important;
 }
 
 .logo {
@@ -78,6 +95,7 @@ html {
     justify-content: space-between;
     width: 186px;
     height: 60px;
+    z-index: 1;
 }
 
 .logo-title {
@@ -150,10 +168,17 @@ html {
 
 }
 
+
+.burger-active {
+
+    transform: rotate(90deg);
+}
+
 .burger-line {
     height: 2px;
     width: 30px;
     background: #F1CDB3;
+
 
 }
 
@@ -192,13 +217,12 @@ html {
             height: 322px;
             margin-top: 0;
         } */
-        
+
 
     .start-screen-puppy {
         width: 369px;
         height: 393px;
         margin-right: 0;
-        margin-top: 0;
         margin-left: 0;
     }
 }
@@ -231,6 +255,7 @@ html {
         margin-top: 0px;
     }
 }
+
 @media (max-width: 767px) {
     .start-screen-content {
         width: 100%;
@@ -269,7 +294,6 @@ html {
 
     }
 }
-
 
 
 @media (max-width: 767px) {
@@ -314,6 +338,7 @@ html {
     font-weight: 500;
     line-height: 22.1px;
     letter-spacing: 0.06em;
+
 }
 
 @media (max-width: 1279px) {
@@ -322,7 +347,7 @@ html {
     }
 }
 
-@media (max-width: 712px) {
+@media (max-width: 767px) {
     .nav-menu {
         width: 0;
         height: 0;
@@ -337,13 +362,49 @@ html {
         height: 22px;
         margin-right: 22px;
         margin-top: 18px;
+        position: relative;
+        z-index: 1;
+
     }
+
+    .header-active {
+        width: 310px;
+        padding-right: 43px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .nav-menu {
+        padding-top: 247px;
+        width: 320px;
+        height: auto;
+        margin-left: auto;
+        margin-right: 0;
+        font-family: "Arial";
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 160%;
+        background: #292929;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+
+    }
+
+    .nav-list {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 243px;
+        height: 327px;
+        margin: 0 auto;
+    }
+
 }
 
 
-
-
-@media(max-width: 488px){
+@media(max-width: 488px) {
     .subheading {
         width: 300px;
         height: 94px;
@@ -449,7 +510,7 @@ html {
         height: 868px;
         margin-bottom: 85px;
         margin-left: 3px;
-      
+
     }
 
     .about-heading {
@@ -489,7 +550,7 @@ html {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .about {
         width: 100%;
         height: 974px;
@@ -499,7 +560,7 @@ html {
     .about-content {
         width: 300px;
         height: auto;
-       padding: 0;
+        padding: 0;
     }
 
     .about-content-text {
@@ -564,6 +625,7 @@ html {
         width: 768px;
         height: 877px;
     }
+
     .about-pets {
         justify-content: center;
     }
@@ -633,7 +695,7 @@ html {
 }
 
 .button-arrow-left {
-   grid-area: button-arrow-left;
+    grid-area: button-arrow-left;
     width: 52px;
     height: 52px;
     border-radius: 100px;
@@ -793,7 +855,7 @@ html {
             width: 300px;
             height: 707px;
             align-items: center;
-margin: 0 auto;
+            margin: 0 auto;
         }
 
         .pets-heading {
@@ -814,9 +876,9 @@ margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto auto;
-            grid-template-areas: 
-            "pets-card pets-card" 
-            "button-arrow-left button-arrow-right";
+            grid-template-areas:
+                "pets-card pets-card"
+                "button-arrow-left button-arrow-right";
             height: auto;
             justify-items: center;
             row-gap: 10px;
@@ -831,8 +893,6 @@ margin: 0 auto;
             height: 100%;
             align-items: center;
             background-color: #FAFAFA
-            
-          
         }
 
         .visible-slider {
@@ -851,10 +911,11 @@ margin: 0 auto;
             margin-left: 17px;
 
         }
+
         .card-button-primary {
             margin-left: 15px;
         }
-  
+
     }
 
 }
@@ -920,9 +981,9 @@ margin: 0 auto;
     }
 
     .help-list {
-       
+
         gap: 52px;
-       
+
     }
 }
 
@@ -934,7 +995,7 @@ margin: 0 auto;
     }
 
     .help-list {
-        gap:0;
+        gap: 0;
         width: 630px;
         display: grid;
         align-self: center;
@@ -952,7 +1013,7 @@ margin: 0 auto;
     .help {
         height: 745px;
         width: 100%;
-        
+
     }
 
     .help-heading {
@@ -1111,13 +1172,16 @@ margin: 0 auto;
     }
 
 
+
 }
 
-@media (max-width: 4512px) {
+@media (max-width: 512px) {
     .donation-dog {
+        width: 505px;
+        height: 261px;
         width: 260px;
         height: 135px;
-        margin-bottom: 32px;
+        margin-bottom: 0px;
         margin-left: 2px;
     }
 }
@@ -1151,10 +1215,10 @@ margin: 0 auto;
     .donation-content-heading {
         font-size: 25px;
         line-height: 32.5px;
-       
-       
+
+
     }
-    
+
 
     .donation-subheading {
         font-family: Georgia;
@@ -1163,13 +1227,13 @@ margin: 0 auto;
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.03em;
-    
+
     }
 
     .credit-card {
         width: 281px;
         height: 43px;
-       
+
     }
 
     .number-card {
@@ -1190,7 +1254,7 @@ margin: 0 auto;
         text-align: justify;
         font-style: italic;
         color: #B2B2B2;
-     
+
     }
 
     .donation-dog {
@@ -1354,7 +1418,7 @@ margin: 0 auto;
 
 @media (max-width: 877px) {
     .footer {
-        
+
         height: 639px;
         justify-content: space-between;
         margin-bottom: 0;
@@ -1366,7 +1430,7 @@ margin: 0 auto;
         flex-wrap: wrap;
         padding-left: 38px;
         padding-right: 39px;
-       
+
         height: auto;
         margin-top: 30px;
         margin-bottom: 0;
@@ -1415,11 +1479,11 @@ margin: 0 auto;
 
     .footer-contacts {
         width: 278px;
-        height: 208px; 
+        height: 208px;
         align-items: center;
         margin-top: 0px;
         margin-right: 0px;
-       
+
     }
 
     .footer h3 {
@@ -1427,21 +1491,21 @@ margin: 0 auto;
         text-align: center;
         width: 278px;
     }
-    
-  
-
-.location {
-    width: 300px;
-    height: 234px;
-    margin-top: 40px;
- 
-}
-
-.fotter-puppe {
-    width: 260px;
-    height: 269px;
-    margin-top: 39px;
 
 
-}
+
+    .location {
+        width: 300px;
+        height: 234px;
+        margin-top: 40px;
+
+    }
+
+    .fotter-puppe {
+        width: 260px;
+        height: 269px;
+        margin-top: 39px;
+
+
+    }
 }

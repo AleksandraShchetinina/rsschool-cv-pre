@@ -215,6 +215,15 @@
             </div>
         </footer>
     </div>
+    <script src="/shelter/script.js"></script>
+    <script>
+        document.querySelector('.burger-menu').addEventListener('click', function() {
+            this.classList.toggle('burger-active');
+            document.querySelector('.nav-menu').classList.toggle('open');
+            document.querySelector('.start-screen').classList.toggle('start-screen-active');
+        })
+        
+    </script>
 </body>
 
 </html>
